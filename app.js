@@ -2,6 +2,13 @@
 
 let amigos = [];
 
+function asignarTextoElemento(elemento, texto) {
+    let elementoHTML = document.querySelector(elemento);
+    elementoHTML.innerHTML = texto;
+    return;
+}
+
+
 function agregarAmigo(){
     let amigoInput = document.getElementById('amigo');
     let nombreAmigo = amigoInput.value;
@@ -41,6 +48,7 @@ function sortearAmigo() {
     let sorteo = Math.floor(Math.random() * amigos.length);
     let amigoSorteado = amigos[sorteo];
     document.getElementById('listaAmigos').innerHTML = amigoSorteado;
+    asignarTextoElemento('h2','Tu amigo del mes es:');
 
 }
 
