@@ -48,7 +48,7 @@ function sortearAmigo() {
     let sorteo = Math.floor(Math.random() * amigos.length);
     let amigoSorteado = amigos[sorteo];
     document.getElementById('listaAmigos').innerHTML = amigoSorteado;
-    asignarTextoElemento('h2','Tu amigo del mes es:');
+    asignarTextoElemento('h2','Tu amigo secreto es:');
 
 }
 
